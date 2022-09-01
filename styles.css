@@ -1,0 +1,243 @@
+:root{
+    --primary-color: #8b5cf6;
+    --dark-gray: #6b7280;
+    --off-white: #ede9fe;
+
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+.container{
+    margin: auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.app-description{
+    margin: 2rem;
+    font-size: large;
+}
+
+.div-input{
+    font-size: x-large;
+    margin: 1rem;
+}
+
+.inputbox{
+    margin-left: 0.3rem;
+    position: relative;bottom: 0.3rem;
+    border: 0.1rem solid var(--primary-color);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    width: 9rem;
+    font-size: large;
+    
+}
+
+button{
+    margin: 1rem auto 1rem auto;
+    padding: 0.5rem 1rem;
+    border-radius: 0.8rem;
+    font-size: x-large;
+    color: var(--off-white);
+    border: none;
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px .4px 0px 0.4px;
+
+}
+
+
+
+ 
+
+ .link{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+   
+ }
+
+ 
+
+ .list-item-inline {
+    display: inline;
+    padding: 0rem 0.5rem 0rem 0rem;
+ }
+
+ .list-non-bullet {
+    list-style: none;
+ }
+
+ 
+
+ .navigation {
+    background-color: var(--primary-color);
+    color:white;
+    padding: 0.5rem;
+    font-weight: 200;
+    font-size: large;
+    text-align: center;
+
+ }
+
+
+
+.footer .link {
+    color: white;
+    text-decoration: none;
+    display: inline;
+    
+}
+
+.footer ul{
+    display: inline;
+    padding-inline-start: 0px;
+}
+
+
+
+.footer {
+    margin-top: 10rem;
+    color: white;
+    background-color: var(--primary-color);
+    padding: 0.4rem;
+    text-align: center;
+    position: fixed; bottom:0; left:0; right:0; 
+    
+}
+
+.footer-header {
+    padding-top: 0.5rem;
+    padding-bottom: 0.8rem;
+    font-size: large;
+}
+
+
+.footer .linkedinlogo{
+    width: 60px;
+}
+
+.footer .twitterlogo{
+    width: 50px;
+}
+
+.footer .githublogo{
+    width: 70px;
+    position: relative; bottom: 5px;
+}
+
+.container-table{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+table{
+    font-size: x-large;
+    margin: auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+caption{
+    font-size: xx-large;
+    padding: 0.6rem;
+    text-align: center;
+}
+th{
+    border: 2px solid var(--primary-color);
+    padding: 0.8rem;
+  
+}
+td{
+   
+    border: 2px solid var(--primary-color);
+    padding: 0.8rem;
+}
+
+@media(max-width:520px){
+    
+    table{
+    
+        font-size: 1.3rem;
+        margin: 0.3rem;
+        text-align: center;
+        border-collapse: collapse;
+    }
+    caption{
+        font-size: x-large;
+        padding: 0.5rem;
+        text-align: center;
+    }
+    th{
+        border: 2px solid var(--primary-color);
+        padding: 0.2rem;
+      
+    }
+    td{
+        padding: 0.4rem;
+        border: 2px solid var(--primary-color);
+    }
+    .footer {
+        color: white;
+        background-color: var(--primary-color);
+        padding: 0.2rem;
+        text-align: center;
+        position: fixed; bottom:0; left:0; right:0; 
+        
+    }
+    .footer .githublogo{
+        width: 70px;
+        position: relative; bottom: 3px;
+    }
+
+}
+@media(max-height:610px){
+
+    .container-table{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+  
+
+    table{
+    
+        font-size: 1.3rem;
+        margin: auto;
+        text-align: center;
+        border-collapse: collapse;
+    }
+    caption{
+        margin: auto;
+        font-size: x-large;
+        padding: 0.5rem;
+        text-align: center;
+    }
+    th{
+        border: 2px solid var(--primary-color);
+        padding: 0.2rem;
+      
+    }
+    td{
+        padding: 0.4rem;
+        border: 2px solid var(--primary-color);
+    }
+    .footer {
+        color: white;
+        background-color: var(--primary-color);
+        padding: 0.2rem;
+        text-align: center;
+        position: fixed; bottom:0; left:0; right:0; 
+        
+    }
+    .footer .githublogo{
+        width: 70px;
+        position: relative; bottom: 3px;
+    }
+
+}
+
