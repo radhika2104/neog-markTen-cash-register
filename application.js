@@ -65,8 +65,8 @@ document.addEventListener('DOMContentLoaded',function(){
         var bAmount = Number(billAmount.value)
         
         // Error checking
-        if (parseFloat(bAmount) === 0) {
-            msg = 'Error: Enter a numeric value to proceed!'
+        if (billAmount.value.length === 0) {
+            msg = 'Error: Enter a numeric value for bill Amount to proceed!'
             billMessageHandler(msg);
             
         }
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded',function(){
             billMessageHandler(msg);
             
         }
-        else if (bAmount < 0){
+        else if (bAmount <= 0){
             msg = 'Error: Please enter a bill amount greater than 0!'
             billMessageHandler(msg);
             
@@ -94,12 +94,12 @@ document.addEventListener('DOMContentLoaded',function(){
         hideElement(returnNotesTable);
         var cAmount = Number(cashAmount.value);
         var bAmount = Number(billAmount.value);
-        if (parseFloat(cAmount) === 0 ){
+        if (cashAmount.value.length === 0 ){
             msg = 'Error: Enter a numeric value  of cash paid to proceed!'
             cashMessageHandler(msg);
             
         }
-        else if (parseFloat(bAmount) === 0){
+        else if (billAmount.value.length === 0){
             msg = 'Error: Enter a numeric value  of bill Amount to proceed!'
             cashMessageHandler(msg);
             
