@@ -43,6 +43,16 @@
     
 }
 
+input[type=number]{
+    -moz-appearance: textfield;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 button{
     margin: 1rem auto 1rem auto;
     padding: 0.5rem 1rem;
